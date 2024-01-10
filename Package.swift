@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftAudio",
+     platforms: [
+        .iOS(.v14),
+        .watchOS(.v6), // WatchOS sürümünü buraya ekleyin
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
